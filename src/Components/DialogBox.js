@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  makeStyles,
   Button,
   TextField,
   Dialog,
@@ -12,10 +11,6 @@ import {
 } from '@material-ui/core';
 
 import { connect } from 'react-redux';
-
-const useStyles = makeStyles((theme) => ({
-  root: {},
-}));
 
 const DialogBox = (props) => {
   const [ExpenseName, setExpenseName] = React.useState(

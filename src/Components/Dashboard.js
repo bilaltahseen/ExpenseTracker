@@ -66,8 +66,8 @@ const Dashboard = (props) => {
         </Grid>
         <br />
         <Button
+          style={{ width: '25%' }}
           onClick={addRecord}
-          fullWidth
           color='primary'
           variant='contained'
         >
