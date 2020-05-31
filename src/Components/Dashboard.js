@@ -17,7 +17,15 @@ const useStyles = makeStyles((theme) => ({
 
 const Dashboard = (props) => {
   const classes = useStyles();
+  const capital_letter = (str) => {
+    str = str.toLowerCase().split(' ');
 
+    for (var i = 0, x = str.length; i < x; i++) {
+      str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(' ');
+  };
   const [ExpenseName, setExpenseName] = React.useState('');
   const [ExpenseAmount, setExpenseAmount] = React.useState(0);
 
@@ -30,7 +38,7 @@ const Dashboard = (props) => {
           .fill(null)
           .map(() => Math.random().toString(36).substr(2))
           .join(''),
-        ExpenseName: ExpenseName,
+        ExpenseName: capital_letter(ExpenseName),
         ExpenseAmount: ExpenseAmount,
         currentDate: moment().format('lll'),
       };

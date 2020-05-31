@@ -23,8 +23,23 @@ const DialogBox = (props) => {
   );
   const handleClose = props.toggleDialog;
 
+  const capital_letter = (str) => {
+    str = str.toLowerCase().split(' ');
+
+    for (var i = 0, x = str.length; i < x; i++) {
+      str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(' ');
+  };
+
   const mutate = (updatedData) => {
-    props.mutateExpense((updatedData = { ExpenseName, ExpenseAmount }));
+    props.mutateExpense(
+      (updatedData = {
+        ExpenseName: capital_letter(ExpenseName),
+        ExpenseAmount: ExpenseAmount,
+      })
+    );
   };
 
   return (
