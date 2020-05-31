@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  makeStyles,
-  AppBar,
-  Toolbar,
-  Button,
-  Box,
-  Container,
-} from '@material-ui/core';
+import { makeStyles, AppBar, Toolbar, Button, Box } from '@material-ui/core';
 import { connect } from 'react-redux';
 
 import { withRouter } from 'react-router-dom';

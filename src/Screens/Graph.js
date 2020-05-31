@@ -1,12 +1,11 @@
 import React from 'react';
-import { makeStyles, Container, Box } from '@material-ui/core';
+import { makeStyles, Container } from '@material-ui/core';
 import {
   LineChart,
   XAxis,
   Tooltip,
   CartesianGrid,
   Line,
-  Legend,
   Label,
   LabelList,
   YAxis,

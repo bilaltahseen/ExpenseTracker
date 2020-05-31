@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Edit = (props) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+
   let rows = [...props.currentExpenses];
   return (
     <React.Fragment>
@@ -58,6 +58,17 @@ const Edit = (props) => {
                         Edit
                       </Button>
                     </TableCell>
+                    <TableCell align='right'>
+                      <Button
+                        onClick={() => {
+                          props.deleteExpnese(row._id);
+                        }}
+                        variant='contained'
+                        color='primary'
+                      >
+                        Delete
+                      </Button>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -81,6 +92,7 @@ const mapDispatchToProps = (dispatch) => {
     toggleDialog: (id) => {
       dispatch({ type: 'SHOW_DIALOG', payload: id });
     },
+    deleteExpnese: (id) => dispatch({ type: 'DELETE_EXPENSE', payload: id }),
   };
 };
 

@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DialogBox = (props) => {
-  const classes = useStyles();
   const [ExpenseName, setExpenseName] = React.useState(
     props.currentExpenses.filter((elem) => elem._id === props.currentId)[0]
       .ExpenseName
