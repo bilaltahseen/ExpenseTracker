@@ -33,8 +33,9 @@ const DialogBox = (props) => {
         <DialogTitle id='form-dialog-title'>Edit Record</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Type new values of expenses for the following expense, $
-            {'Expense Name'} and ${'Expense Amount'}
+            Type new values of expenses for the following Expense Name,
+            <strong>{ExpenseName}</strong> having Expense Amount{' '}
+            <strong>{ExpenseAmount}</strong>
           </DialogContentText>
           <Grid container justify='space-between' direction='row' spacing={1}>
             <Grid item xs={9}>
