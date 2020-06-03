@@ -1,7 +1,9 @@
 ## Expense Tracker App
 
-Main Screen
-[](/images/main.png)
+**Main Screen**
 
-Graph Screen
-[](/images/graph.png)
+![ScreenShot](/images/main.png)
+
+**Graph Screen**
+
+![ScreenShot](/images/graph.png)
