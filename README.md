@@ -1,6 +1,6 @@
 ## Expense Tracker App
 
-[expensetracker_bilaltahseen.surge.sh](expensetracker_bilaltahseen.surge.sh)
+[expensetracker_bilaltahseen.surge.sh](http://expensetracker_bilaltahseen.surge.sh)
 
 **Main Screen**
 
